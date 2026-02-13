@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="AnoSphere is a non-custodial crypto wallet. Create a wallet, send & receive, and stay in control of your keys." />
-  <title>AnoSphere App — Non-Custodial Wallet</title>
+  <meta name="description" content="AnoSphere App is a non-custodial mobile app for interacting with the decentralized AnoSphere network and its digital currency, Anos." />
+  <title>AnoSphere App — Non-Custodial Anos Wallet</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="AnoSphere App — Non-Custodial Wallet" />
-  <meta property="og:description" content="A non-custodial crypto wallet. You control your keys. Coming soon on Android and iOS." />
+  <meta property="og:title" content="AnoSphere App — Non-Custodial Anos Wallet" />
+  <meta property="og:description" content="A non-custodial app for interacting with the decentralized AnoSphere network and Anos. Coming soon on Android and iOS." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://anoshpereapp.com" />
+  <meta property="og:url" content="https://anosphereapp.com" />
 </head>
 
 <body>
@@ -42,19 +42,25 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Non-custodial • Decentralized • Key-controlled</p>
-          <h1>Your wallet. Your keys. Your control.</h1>
+          <h1>Interact with AnoSphere — without giving up custody.</h1>
           <p class="subhead">
-            AnoSphere is a non-custodial crypto wallet designed for simple sending and receiving,
-            with clear confirmations and a focus on user control.
+            AnoSphere App is a non-custodial mobile app for interacting with the decentralized AnoSphere network and
+            its digital currency, <strong>Anos</strong>. Your keys are generated on your device and stay with you.
           </p>
 
           <div class="cta-row">
-            <a class="btn primary disabled" href="#" aria-disabled="true" title="Link coming soon">
-              Google Play (Coming soon)
-            </a>
-            <a class="btn secondary disabled" href="#" aria-disabled="true" title="Link coming soon">
-              App Store (Coming soon)
-            </a>
+            <div class="store">
+              <a class="btn primary disabled" href="#" aria-disabled="true" title="Link coming soon">
+                Google Play
+              </a>
+              <div class="store-note">Coming soon</div>
+            </div>
+            <div class="store">
+              <a class="btn secondary disabled" href="#" aria-disabled="true" title="Link coming soon">
+                App Store
+              </a>
+              <div class="store-note">Coming soon</div>
+            </div>
           </div>
 
           <p class="micro">
@@ -117,13 +123,13 @@
 
         <div class="grid-3">
           <div class="card">
-            <h3>Send & receive</h3>
-            <p>Simple transfers with clear status messaging and confirmation prompts.</p>
+            <h3>Send & receive Anos</h3>
+            <p>Simple transfers with clear confirmations. Fees (if any) are shown before you send.</p>
           </div>
 
           <div class="card">
             <h3>Non-custodial</h3>
-            <p>You control your private keys. The app is designed so your funds are not held by us.</p>
+            <p>You control your private keys. The publisher does not custody funds and cannot move your Anos.</p>
           </div>
 
           <div class="card">
@@ -132,18 +138,47 @@
           </div>
 
           <div class="card">
-            <h3>Transparent fees</h3>
-            <p>Fees are displayed before you send, so you can confirm totals up front.</p>
+            <h3>Open-source</h3>
+            <p>The mobile app code is published in a public GitHub repository for transparency and review.</p>
           </div>
 
           <div class="card">
             <h3>Network aware</h3>
-            <p>Designed to work with decentralized infrastructure rather than a single centralized server.</p>
+            <p>Designed to interact with decentralized infrastructure rather than a single centralized backend.</p>
           </div>
 
           <div class="card">
             <h3>Privacy-minded</h3>
-            <p>We aim to collect minimal data required for app functionality and support.</p>
+            <p>No ads. No analytics SDKs. No user accounts. Data lives on your device and/or your AnoPod.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IT IS / ISN'T -->
+    <section class="section alt" id="about">
+      <div class="container">
+        <h2>What this app is (and isn’t)</h2>
+        <p class="section-lead">
+          AnoSphere App is a client for a decentralized network. It does not accept deposits, hold funds, or run an exchange.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>It is</h3>
+            <p>
+              • A non-custodial wallet for Anos<br>
+              • A client for creating and using an <strong>AnoPod</strong> (your private, user-controlled storage space)<br>
+              • A way to interact with network endpoints you choose
+            </p>
+          </div>
+          <div class="card">
+            <h3>It is not</h3>
+            <p>
+              • A custodial wallet or hosted account<br>
+              • A broker, exchange, or money transmitter<br>
+              • A place where fiat money is loaded, stored, or sent
+            </p>
           </div>
         </div>
       </div>
@@ -161,8 +196,8 @@
           <div class="card">
             <h3>Keys on your device</h3>
             <p>
-              The wallet is designed to keep private keys on the user’s device (non-custodial).
-              Consider enabling device passcode/biometrics for additional protection.
+              Private keys and encryption keys are generated on your device and stored using your device’s secure
+              storage (e.g., OS keychain/keystore / secure enclave features, depending on platform).
             </p>
           </div>
 
@@ -177,8 +212,8 @@
           <div class="callout">
             <h3>Important note</h3>
             <p>
-              Crypto assets can be risky. Always verify addresses, amounts, and network details before sending.
-              If you lose access to your keys, you may lose access to funds.
+              Digital assets can be risky. Always verify addresses, amounts, and network details before sending.
+              Transactions may be irreversible. If you lose access to your keys, you may lose access to funds.
             </p>
           </div>
 
@@ -216,8 +251,31 @@
           <details>
             <summary>Who operates this app?</summary>
             <p>
-              The app is published by a Wyoming LLC (details will appear here once finalized).
-              If you need to add legal/company info later, you can edit the footer section.
+              The app is published by <strong>anosphereApp LLC</strong> (D‑U‑N‑S: 143351010).
+            </p>
+          </details>
+
+          <details>
+            <summary>Does the app buy/sell Anos or handle fiat money?</summary>
+            <p>
+              No. The app does not sell Anos, does not accept fiat deposits, and does not process payments. It only
+              signs user-authorized requests and sends them to the decentralized network.
+            </p>
+          </details>
+
+          <details>
+            <summary>Is there a marketplace?</summary>
+            <p>
+              AnoSphere includes a distributed, non-custodial marketplace where users can discover other users to trade with.
+              Trades happen peer-to-peer over the decentralized network. The publisher does not take custody of funds.
+            </p>
+          </details>
+
+          <details>
+            <summary>Where is the code?</summary>
+            <p>
+              The mobile app code is open source on GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com</a>
+              (replace this placeholder with your repo link).
             </p>
           </details>
         </div>
@@ -243,13 +301,12 @@
 
           <div>
             <p class="label">Social</p>
-            <p class="muted">Add links here (X, GitHub, Facebook, etc.)</p>
+            <p class="muted">
+              GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com</a>
+              (replace with your repo/org)
+            </p>
           </div>
         </div>
-
-        <p class="micro muted">
-          Tip: create these inboxes later; for now you can point them to your preferred email.
-        </p>
       </div>
     </section>
   </main>
@@ -262,7 +319,7 @@
           <span class="brand-name">AnoSphere</span>
         </div>
         <p class="muted">
-          © <span id="year"></span> AnoSphere. All rights reserved.
+          © <span id="year"></span> AnoSphere. Published by anosphereApp LLC.
         </p>
       </div>
 
@@ -276,7 +333,7 @@
 
     <div class="container footer-disclaimer">
       <p class="micro muted">
-        AnoSphere is a software wallet. We do not custody user funds. Digital assets are volatile and may result in loss.
+        We do not custody user funds. Digital assets are volatile and may result in loss.
         Use at your own risk. Nothing on this site constitutes financial advice.
       </p>
     </div>
