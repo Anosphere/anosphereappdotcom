@@ -442,3 +442,126 @@ h2{
   .contact-card{ grid-template-columns: 1fr; }
   .nav{ display:none; }
 }
+
+
+/* -------------------------------------------------
+   Hero visual (CSS-only "snazzy" right-side card)
+   Works with your existing .hero-card styles
+------------------------------------------------- */
+
+.hero-card.hero-visual{
+  padding: 16px;
+}
+
+.hero-visual-inner{
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 22px;
+  background:
+    radial-gradient(900px 300px at 10% 15%, rgba(120, 140, 255, 0.35), rgba(0,0,0,0) 55%),
+    radial-gradient(700px 260px at 90% 30%, rgba(40, 215, 255, 0.25), rgba(0,0,0,0) 60%),
+    radial-gradient(900px 420px at 50% 120%, rgba(124, 92, 255, 0.22), rgba(0,0,0,0) 60%),
+    linear-gradient(180deg, rgba(20, 26, 40, 0.95), rgba(10, 12, 18, 0.95));
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.hero-visual-inner::before{
+  content:"";
+  position:absolute;
+  inset:-40px;
+  background:
+    repeating-linear-gradient(
+      60deg,
+      rgba(255,255,255,0.06) 0px,
+      rgba(255,255,255,0.06) 1px,
+      rgba(255,255,255,0) 1px,
+      rgba(255,255,255,0) 18px
+    );
+  opacity: 0.25;
+  transform: rotate(-6deg);
+  pointer-events:none;
+}
+
+.hero-visual-inner *{
+  position: relative;
+}
+
+.hero-badge{
+  display:inline-block;
+  font-size: 12px;
+  letter-spacing: .02em;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: rgba(255,255,255,0.92);
+  margin-bottom: 12px;
+}
+
+.hero-visual-title{
+  margin: 0 0 6px;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.hero-visual-sub{
+  margin: 0 0 14px;
+  color: rgba(255,255,255,0.80);
+  line-height: 1.55;
+  font-size: 14px;
+  max-width: 52ch;
+}
+
+.hero-visual-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.hero-visual-tile{
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.hero-visual .tile-title{
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.95);
+}
+
+.hero-visual .tile-body{
+  color: rgba(255,255,255,0.78);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.hero-visual-foot{
+  margin-top: 14px;
+}
+
+.hero-visual-foot-note{
+  display:inline-block;
+  font-size: 12px;
+  color: rgba(255,255,255,0.78);
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.20);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* make badges readable on dark hero */
+.hero-card.hero-visual .badge{
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.14);
+  color: rgba(255,255,255,0.88);
+}
+
+@media (max-width: 920px){
+  .hero-visual-grid{ grid-template-columns: 1fr; }
+}
