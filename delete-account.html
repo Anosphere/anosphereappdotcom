@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="How to delete your anoSphere account from your phone, how to ask us if you no longer have the app, and what the network keeps and why." />
+  <title>Delete your account — AnoSphere</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AnoSphere home">
+        <span class="brand-mark">A</span>
+        <span class="brand-name">AnoSphere</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#security">Security</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Deleting your anoSphere account</h1>
+        <p class="subhead">Last updated: <strong>October 10, 2026</strong></p>
+
+        <div class="card">
+          <h3>The quickest way is inside the app</h3>
+          <p class="muted">
+            Open anoSphere, go to <strong>Me → Keys → Delete my account</strong>, and confirm. The app offers you an export (a rescue file) first, then deletes every key and every record anoSphere keeps on this phone. From that moment this phone can no longer act for the account.
+          </p>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card">
+          <h3>If you no longer have the app</h3>
+          <p class="muted">
+            If you uninstalled the app or lost the phone, send a message to <a href="mailto:support@anosphereapp.com">support@anosphereapp.com</a> from the email address you entered when you joined, with the subject line “Delete my account”. We will reply and confirm what was done. You do not need to reinstall the app to ask.
+          </p>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card">
+          <h3>What deleting means, honestly</h3>
+          <p class="muted">
+            • <strong>Everything on your phone is deleted.</strong> Your keys, your room keys, your local records, your settings — gone from that phone.<br><br>
+            • <strong>The network’s records are not deleted, by design.</strong> The anoSphere network is a public ledger kept by many independent computers; every transaction ever confirmed stays on it for ever. Your stored records (your encrypted recovery photos, contacts and documents, and anything you put in your storage box) are kept append-only and encrypted; nothing on the network is ever deleted, and nobody can read those records except as the recovery process allows.<br><br>
+            • <strong>Your account stays recoverable.</strong> Because the network keeps its records, you (and only you) can later get the account back through the account recovery process, with the help of a moderator. Deleting the app’s copy does not close the account on the network; it abandons it in place.<br><br>
+            • <strong>What we can do on request:</strong> confirm that no copy of your keys exists with us (none ever did — your keys were only ever on your phone), delete the support email you sent us, and answer any question about what the network holds about your account.<br><br>
+            • <strong>What we cannot do:</strong> remove transactions from the public ledger, or delete the append-only encrypted records. The publisher does not run the network and keeps none of its records; the network is designed so that nothing is ever silently erased — this is what makes your account recoverable and your money safe.
+          </p>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card">
+          <h3>Questions</h3>
+          <p class="muted">
+            <a href="mailto:support@anosphereapp.com">support@anosphereapp.com</a> · The privacy policy is at <a href="privacy.html">anosphereapp.com/privacy.html</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="brand small">
+          <span class="brand-mark">A</span>
+          <span class="brand-name">AnoSphere</span>
+        </div>
+        <p class="muted">© <span id="year"></span> AnoSphere. Published by anosphereApp LLC.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="privacy.html" class="muted">Privacy Policy</a>
+        <a href="terms.html" class="muted">Terms</a>
+        <a href="delete-account.html" class="muted">Delete account</a>
+        <a href="index.html" class="muted">Home</a>
+      </div>
+    </div>
+
+    <div class="container footer-disclaimer">
+      <p class="micro muted">
+        AnoSphere is a non-custodial software wallet. The publisher does not custody user funds.
+        Nothing on this site constitutes financial advice.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

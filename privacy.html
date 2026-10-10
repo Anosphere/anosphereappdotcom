@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Privacy Policy for AnoSphere App." />
+  <meta name="description" content="Privacy Policy for the anoSphere app: what stays on your phone, what leaves it and why, who can ever see what, and how deletion works." />
   <title>Privacy Policy — AnoSphere</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,12 +34,68 @@
     <section class="section">
       <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subhead">Effective date: <strong>February 13, 2026</strong></p>
+        <p class="subhead">Last updated: <strong>October 10, 2026</strong> · Published by anosphereApp LLC · Questions: <a href="mailto:privacy@anosphereapp.com">privacy@anosphereapp.com</a></p>
 
         <div class="card">
+          <h3>The short version</h3>
           <p class="muted">
-            This Privacy Policy explains how the AnoSphere mobile application (“AnoSphere”, “App”) and this website handle information.
-            AnoSphere is designed to be <strong>non-custodial</strong>: the publisher does not hold your private keys and does not custody funds.
+            • anoSphere is your own account on the anoSphere network. Your keys are made on your phone and stay on your phone. We never hold them and cannot move your money.<br><br>
+            • The app sends nobody anything behind your back: no analytics, no usage tracking, no crash reports, no advertising, no third-party software inside the app.<br><br>
+            • What leaves your phone is what you yourself submit to the network: your own transactions, your own encrypted recovery records, your own encrypted storage, your own messages (encrypted end to end), and a market card if you choose to list one.<br><br>
+            • anosphereApp LLC publishes the app. It does not run the network and holds none of the records the network keeps. The only information we ourselves hold is the email you send to our support addresses.<br><br>
+            • The network keeps its records permanently and append-only. Nothing on it is ever silently erased — that is what makes your money safe and your account recoverable. This policy says exactly what that means for you.
+          </p>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card">
+          <h3>1. What anoSphere is, and who runs what</h3>
+          <p class="muted">
+            anoSphere is a phone app for the anoSphere network. With it you create your account on the network (your “anoPod”), send and receive Anos (the network’s money, kept on the public Anos ledger), keep an encrypted storage box, talk in private rooms, list a market card, and — if you ever lose your phone or your keys — get your account back through the network’s account recovery process with the help of a moderator.<br><br>
+            <strong>anosphereApp LLC</strong> (“we”, “us”) publishes the app. We do not run the anoSphere network: its ledger is kept by independent validators, its storage computers are run by the network’s participants under the network’s rules, and its rules are set by the network’s community. We hold no account of yours, no photo, no record and no key. The app is a client: it signs what you authorize on your phone and sends it to the network you choose to use.
+          </p>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card">
+          <h3>2. What stays on your phone and nowhere else</h3>
+          <p class="muted">
+            • <strong>Your keys.</strong> Every key — your chain keys, your anoPod encryption key, your receiving key, your room keys — is generated on your phone and kept in the phone’s protected storage. Nobody receives a copy. (The one exception you choose yourself: the recovery escrow in section 4.)<br><br>
+            • <strong>Your fingerprint or face unlock.</strong> The app asks the phone to confirm it is you before money-class actions. The phone answers yes or no; the app never sees or stores biometric data, and nothing biometric ever leaves the phone.<br><br>
+            • <strong>The nine facts you type when you join</strong> (your first and last name, your father’s first and last name, your mother’s first name and maiden name, your city, your country, your date of birth). They are run through a one-way formula on your phone and then wiped. Only the first portion of the resulting scrambled fingerprint is published (section 3) so that a moderator can ever locate your account at a recovery. The facts themselves are never stored and never sent.<br><br>
+            • <strong>Your messages in readable form.</strong> Room messages are encrypted on your phone before they leave it (section 3).<br><br>
+            • <strong>Your room names, your read marks, your blocked list, your settings</strong> — all phone-local. The network never learns which rooms you have read or whom you have blocked.<br><br>
+            • <strong>Your price notes and your storage box in readable form</strong> — encrypted on your phone before they leave it.
+          </p>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card">
+          <h3>3. What leaves your phone, and why</h3>
+          <p class="muted">
+            Everything below travels over an encrypted connection (TLS) to the network’s one front door, and the app refuses any other server certificate. Every item is sent by your own action, after the app has told you what it is for.<br><br>
+            • <strong>Your transactions</strong> (amounts, your account’s public identifier, the other account’s identifier, the time; stakes; the escrow of a guarded transfer) go to the Anos ledger. <em>Who can read them:</em> everyone — the ledger is public and permanent; it shows account identifiers, not names. <em>Why:</em> this is how money moves on the network.<br><br>
+            • <strong>The first portion of your identity fingerprint</strong> (a one-way scramble of the nine facts) is published on the ledger once, when you join. <em>Who can read it:</em> everyone, but it cannot be turned back into your facts. <em>Why:</em> so that a moderator can locate your account if you ever need recovery.<br><br>
+            • <strong>Your front selfie, your phone number, your email address and one “phone-a-friend” contact</strong> are your ID records: encrypted on your phone before upload, stored on the network’s storage computers. <em>Who can read them:</em> a moderator, only at a real recovery case you (or someone claiming to be you) opened, to compare the claimant against your enrolled photo. <em>Why:</em> so that you can get your account back without passwords, and so that a thief cannot.<br><br>
+            • <strong>One photo of a government ID document</strong> (your ID card, driver’s licence or passport — your pick) is your security record: encrypted on your phone before upload. <em>Who can read it:</em> nobody looks at it, checks it or verifies it; it can be opened only after an approval by the network’s community, inside a recovery case. <em>Why:</em> the proof of last resort if your keys are lost.<br><br>
+            • <strong>Your protection album</strong> (only if you choose the guarded protection for an account: a second selfie and the document photo), encrypted and stored on the network’s storage computers. <em>Who can read it:</em> your own phone never can — deliberately, so a thief with your phone sees nothing; moderators review it at every assisted transfer from a guarded account. <em>Why:</em> so that a large transfer from a guarded account is checked against your own recorded face and document.<br><br>
+            • <strong>Your storage box</strong> (“My storage”) and your price notes, encrypted on your phone with your own anoPod encryption key and stored on the network’s storage computers; versions are kept. <em>Who can read them:</em> only you. <em>Why:</em> so that your own files survive the loss of a phone.<br><br>
+            • <strong>Your room messages</strong> (text), encrypted end to end on your phone with the room’s key, relayed and stored by the network as bytes it cannot read. <em>Who can read them:</em> only the members of the room, on their phones.<br><br>
+            • <strong>Your market card</strong> (if you list one: buying or selling Anos, an amount, a price) goes to the public market listing. <em>Who can read it:</em> everyone, by its nature.<br><br>
+            • <strong>A recovery request</strong> (if you ever open one: the nine facts re-typed on a new phone, sealed to the recovery room). <em>Who can read it:</em> the moderator handling your case. The recovery also includes a live video call over an everyday calling tool of your choice, outside this app.<br><br>
+            • <strong>A report</strong> (if you report a message, a knock or an invite) is a message you compose and send to <a href="mailto:support@anosphereapp.com">support@anosphereapp.com</a> through your phone’s own mail or share sheet; nothing is attached automatically. <em>Who can read it:</em> we do — it is the one kind of information about you that reaches the publisher.
+          </p>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card">
+          <h3>4. The recovery escrow — your own emergency spare</h3>
+          <p class="muted">
+            When you join, your recovery material (including an emergency spare of your anoPod encryption key, your break-glass key and your backup bundle) is encrypted and placed with the network’s keyholder computers. These keys are labelled, and the labels say the rules: the ID-record key can be released automatically at a real recovery case; everything else is released only after a human decision approved by the network’s community. This is how you — and only you — get your account back. It is not a way for anyone to spend your money: no spending key of yours is ever held by the publisher.
           </p>
         </div>
 
@@ -47,84 +103,64 @@
 
         <div class="grid-2">
           <div class="card">
-            <h3>Information we collect</h3>
+            <h3>5. What we never do</h3>
             <p class="muted">
-              The App is designed to function without creating user accounts and without collecting analytics.
-              We only receive information in a few limited cases:
-              <br><br>
-              • <strong>Support communications</strong> — if you email us, we receive the content of your message and your email address<br>
-              • <strong>Website server logs</strong> — our hosting provider may log standard data (e.g., IP address, user agent) when you visit this website
+              • No analytics, no usage statistics, no telemetry, no crash reports. The app checks for news only while it is open; nothing is sent in the background.<br>
+              • No advertising, no advertising identifiers, no device identifiers.<br>
+              • No third-party software inside the app that could see your data.<br>
+              • No access to your contacts, your location, your photo gallery or your other apps. The camera is used only when you take your enrolment photos or scan a QR code, and only what you capture is used.<br>
+              • No selling, renting or trading of anything about you, ever.
             </p>
           </div>
 
           <div class="card">
-            <h3>Information we do not collect</h3>
+            <h3>6. Permissions the app asks for</h3>
             <p class="muted">
-              We do not want or need your private keys. We do not intentionally collect:
-              <br><br>
-              • Private keys, seed phrases, or passphrases<br>
-              • Biometrics (handled by your device OS)
-              <br>
-              • Contacts, photos, or precise location (unless you choose to share them)
-              <br>
-              • Advertising identifiers or third-party analytics profiles
+              • <strong>Internet</strong> — to talk to the network’s front door.<br>
+              • <strong>Camera</strong> — for your enrolment photos (selfie and ID document) and for scanning QR codes. You can refuse; the app tells you what will not work.<br>
+              • <strong>Biometric</strong> — to let the phone confirm it is you before money-class actions. The phone, not the app, holds your biometric data.
             </p>
           </div>
 
           <div class="card">
-            <h3>Data you store</h3>
+            <h3>7. The public ledger, and how long things are kept</h3>
             <p class="muted">
-              The App can store data on your device (for example: settings, keys, or cached content). If you use an AnoPod,
-              you may also store data in your AnoPod on the AnoSphere network. This data is user-controlled and may be
-              encrypted by keys generated on your device.
+              The Anos ledger is public and permanent: every confirmed transaction stays on it for ever and can be read by anyone, under account identifiers rather than names. Your encrypted records (your ID records, your security records, your protection album, your storage box) are kept append-only: new versions are added, nothing is removed. The network is designed so that nothing is ever silently erased; that is what makes it trustworthy with money and what makes your account recoverable years later. The publisher keeps none of these records and cannot alter or remove them.
             </p>
           </div>
 
           <div class="card">
-            <h3>Network communications</h3>
+            <h3>8. Deleting your account from your phone</h3>
             <p class="muted">
-              When you use the App, it sends requests you authorize to network endpoints (for example: to create/use an AnoPod
-              or to submit Anos transactions). Network operators may receive standard network data (such as your IP address)
-              as part of providing connectivity. The publisher does not control independent network operators.
+              In the app, <strong>Me → Keys → Delete my account</strong> deletes every key and record anoSphere keeps on this phone and abandons the account in place; the app offers you a rescue-file export first. After this, the phone can no longer act for the account. The network’s records are not deleted (section 7), and the account stays recoverable later through the recovery process. If you no longer have the app, see <a href="delete-account.html">Deleting your anoSphere account</a> or write to <a href="mailto:support@anosphereapp.com">support@anosphereapp.com</a>.
             </p>
           </div>
 
           <div class="card">
-            <h3>Third-party services</h3>
+            <h3>9. Who may see your records, and lawful requests</h3>
             <p class="muted">
-              The App and website may involve third parties you choose to use, including app stores and hosting providers.
-              These parties may collect information under their own policies. Examples include:
-              <br><br>
-              • Apple App Store / Google Play (distribution)
-              <br>
-              • Firebase Hosting (this website)
-              <br>
-              • GitHub (open-source code hosting)
+              Your ID records and your security records are opened only inside the network’s recovery process, as described in section 3; moderators and the community approval are the only roads. Your protection album is reviewed only at assisted transfers from a guarded account. Nobody can read your messages or your storage box. If a lawful request from a public authority reaches the publisher, we can provide only what we actually hold — the email you sent us — because we hold nothing else; the public ledger is public already, and the network’s encrypted records can be opened only through the process above.
             </p>
           </div>
 
           <div class="card">
-            <h3>Data retention</h3>
+            <h3>10. This website</h3>
             <p class="muted">
-              We retain support communications only as long as needed to respond and for basic security/legal needs.
-              This website’s server logs are retained by the hosting provider according to their standard practices.
+              This website is hosted on Firebase Hosting, which may log standard data (such as your IP address and browser type) when you visit, under its own policies. If you email us, we receive your message and your address and keep them only as long as needed to answer and for basic security and legal needs. The app stores (Apple App Store, Google Play) and GitHub (where the app’s code is published) collect information under their own policies.
             </p>
           </div>
 
           <div class="card">
-            <h3>Children’s privacy</h3>
+            <h3>11. Children</h3>
             <p class="muted">
-              The App is not directed to children under 13 (or the minimum age required by your local law). If you believe
-              a child has provided personal information to us via support, please contact us.
+              anoSphere is for adults. It is not intended for anyone under 18, and we do not knowingly let anyone under 18 join. If you believe a child has written to us, please contact us.
             </p>
           </div>
 
           <div class="card">
-            <h3>Contact</h3>
+            <h3>12. Languages and changes</h3>
             <p class="muted">
-              For privacy questions, contact:
-              <br><br>
-              <a href="mailto:privacy@anosphereapp.com">privacy@anosphereapp.com</a>
+              The app speaks English and Thai. This policy is written in English; the Thai version is a translation of it, and where the two differ the English text is the policy. If this policy changes, the new version is published on this page with its date, and the app’s About screen points here.
             </p>
           </div>
         </div>
@@ -132,10 +168,9 @@
         <div style="height:18px"></div>
 
         <div class="card">
-          <h3>Changes to this policy</h3>
+          <h3>Contact</h3>
           <p class="muted">
-            We may update this Privacy Policy from time to time. We will update the effective date above and post the revised
-            policy on this page.
+            Privacy questions: <a href="mailto:privacy@anosphereapp.com">privacy@anosphereapp.com</a> · Support and reports: <a href="mailto:support@anosphereapp.com">support@anosphereapp.com</a> · Published by anosphereApp LLC (D‑U‑N‑S: 143351010).
           </p>
         </div>
       </div>
@@ -155,6 +190,7 @@
       <div class="footer-links">
         <a href="privacy.html" class="muted">Privacy Policy</a>
         <a href="terms.html" class="muted">Terms</a>
+        <a href="delete-account.html" class="muted">Delete account</a>
         <a href="index.html" class="muted">Home</a>
       </div>
     </div>
